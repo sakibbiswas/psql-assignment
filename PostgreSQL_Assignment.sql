@@ -73,7 +73,14 @@ FROM species as s
 LEFT JOIN sightings as si ON s.species_id = si.species_id
 WHERE si.sighting_id IS NULL;
 
+
 -- Problem 6 --> Show the most recent 2 sightings.
+SELECT sp.common_name, si.sighting_time, r.name
+FROM sightings as si
+JOIN species as sp ON si.species_id = sp.species_id
+JOIN rangers as r ON si.ranger_id = r.ranger_id
+ORDER BY si.sighting_time DESC
+LIMIT 2;
 
 -- Problem 5 -->
 -- Problem 5 -->
