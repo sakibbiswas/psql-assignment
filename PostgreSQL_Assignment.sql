@@ -73,7 +73,8 @@ FROM species as s
 LEFT JOIN sightings as si ON s.species_id = si.species_id
 WHERE si.sighting_id IS NULL;
 
--- Problem 5 -->
+-- Problem 6 --> Show the most recent 2 sightings.
+
 -- Problem 5 -->
 -- Problem 5 -->
 -- Problem 5 -->
