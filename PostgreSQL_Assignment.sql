@@ -110,8 +110,7 @@ WHERE ranger_id NOT IN (
 );
 
 SELECT * FROM rangers;
--- Problem 5 -->
--- Problem 5 -->
+
 
 
 
